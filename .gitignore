@@ -1,0 +1,27 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+*.launch.pyc
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Binaries and bags
+*.bag
+*.bag.active
+*.out
+*.so
+*.a
