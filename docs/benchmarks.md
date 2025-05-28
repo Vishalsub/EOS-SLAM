@@ -35,9 +35,12 @@ This document outlines how to benchmark EOS-SLAM against other SLAM systems.
 
 ## 📈 Target Benchmarks (Initial Goals)
 
-| System	| ATE ↓	| FPS ↑	| CPU ↓	| Memory ↓ |
-|ORB-SLAM3	|0.21m	|14	    | 68%	|1.1 GB    |
-|VINS-Fusion|0.18m	|22	    |60%	|0.9 GB    |
-|EOS-SLAM	|0.15m	|25+	|<50%	|<700 MB   |
+EOS-SLAM aims to outperform existing SLAM systems in terms of efficiency and real-time performance while maintaining high accuracy. The following table presents our initial benchmark goals compared to industry-standard systems:
 
-Let me know if you want me to initialize this as a GitHub repo or generate boilerplate CMake files and ROS 2 `package.xml`.
+| **System**     | **ATE ↓** | **FPS ↑** | **CPU ↓** | **Memory ↓** |
+|----------------|-----------|-----------|-----------|--------------|
+| ORB-SLAM3      | 0.21 m    | 14 FPS    | 68%       | 1.1 GB       |
+| VINS-Fusion    | 0.18 m    | 22 FPS    | 60%       | 0.9 GB       |
+| **EOS-SLAM**   | **0.15 m**| **25+ FPS**| **< 50%** | **< 700 MB** |
+
+> 📌 *Note: These benchmarks are projected goals. Actual performance will be reported after full integration and testing on KITTI, EuRoC, and TUM datasets.*
